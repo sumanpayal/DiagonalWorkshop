@@ -4,6 +4,7 @@ import {ItemImage} from '../common/ItemImageService';
 
 const Item = props => {
   const {item} = props;
+  // function to find image souce from assets according to its poster name
   const image = ItemImage.GetImage(item['poster-image']);
   return (
     <View style={styles.item}>

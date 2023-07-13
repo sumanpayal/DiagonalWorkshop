@@ -24,6 +24,7 @@ function Home() {
     });
   }, []);
 
+  // function to fetch more data as we scroll down 
   const fetchMore = () => {
     if (data?.content.length < parseInt(data['total-content-items'])) {
       const customData =
@@ -39,7 +40,8 @@ function Home() {
     }
   };
 
-  const applySearch = () => {
+  // get data for show according to search text is available or not
+  const getData = () => {
     let newData = data?.content;
     if (isSearch && searchText.length > 0) {
       newData = data?.content.filter(item => {
@@ -67,7 +69,7 @@ function Home() {
       ) : null}
       <FlatList
         contentContainerStyle={styles.flatlist}
-        data={applySearch()}
+        data={getData()}
         renderItem={({item}) => <Item item={item} />}
         keyExtractor={(item, index) => index}
         numColumns={3}
