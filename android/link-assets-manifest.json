@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/TitilliumWeb-Light.ttf",
+      "sha1": "51ec3675bb54e357ab24eb88b53d596035d1eccd"
+    },
+    {
+      "path": "src/assets/fonts/TitilliumWeb-Regular.ttf",
+      "sha1": "d865b839ba95b93d11458f1ac530013965dd52ac"
+    }
+  ]
+}
